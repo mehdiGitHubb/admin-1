@@ -1,0 +1,36 @@
+{% extends "admin/base.html" %}
+
+{% load static %}
+
+{% block nav %}
+
+        <div class="user-info">
+            <span>Welcome, {{ user.get_username }}.</span>
+            <a href="{% url 'admin:password_change' %}">Change password</a>
+            <a href="http://localhost:5173/" target="_blank"></a>
+
+            <a href="{% url 'admin:logout' %}">Log out</a>
+            <span>Toggle theme (current theme: {{ request.COOKIES.theme|default:'light' }})</span>
+        </div>
+    </div>
+{% endblock %}
+
+{% block branding %}
+    <h1 id="site-name">
+        <a href="http://localhost:5173/" target="_blank">My Custom Admin</a>
+    </h1>
+{% endblock %}
+
+{% block nav_sidebar %}
+    {# Optionally, you can add custom sidebar items here #}
+{% endblock %}
+
+{% block footer %}
+    <div class="footer">
+        <p>Custom footer content here. &copy; 2024</p>
+    </div>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'myadmin/css/custom_admin.css' %}">
+{% endblock %}

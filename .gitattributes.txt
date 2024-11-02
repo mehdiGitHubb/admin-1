@@ -1,0 +1,5 @@
+# Set the default behavior to automatically normalize line endings
+* text=auto
+
+# Specify that SVG files should always use LF
+*.svg text eol=lf

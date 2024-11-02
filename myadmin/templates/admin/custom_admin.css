@@ -1,0 +1,69 @@
+/* Custom Admin Design */
+
+/* General layout */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between; /* Space between header elements */
+    align-items: center; /* Center items vertically */
+    background-color: #007bff; /* Blue background */
+    padding: 10px 30px; /* Adjusted padding for better spacing */
+    color: white;
+    position: relative; /* Ensures proper stacking context */
+}
+
+#site-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#site-name a {
+    color: white;
+    text-decoration: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center; /* Center items vertically in user-info */
+}
+
+.user-info span,
+.user-info a {
+    margin-left: 15px; /* Space between user info elements */
+    color: white;
+    font-size: 14px;
+}
+
+.user-info a {
+    text-decoration: none;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column; /* Stack header content on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .user-info {
+        margin-top: 10px; /* Space between header and user info */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .user-info span,
+    .user-info a {
+        margin-left: 0; /* Reset margin for mobile */
+        margin-right: 15px; /* Add right margin for mobile */
+    }
+}
