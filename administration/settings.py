@@ -22,7 +22,7 @@ SECRET_KEY = 'django-insecure-9la(bzl*witio&4(lhmqg3l6ir^y&7ht)k!_u)v1#!noutk2pp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['admin-1-154o.onrender.com']
 
 # Media settings
 MEDIA_URL = '/media/'  # The URL used to access media files
